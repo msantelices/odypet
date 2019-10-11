@@ -1,0 +1,32 @@
+$primary: #48BEFF;
+$secondary: #007bff;
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 67%, rgba(242,242,242,1) 100%);
+}
+
+.col {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+}
+.primary-bg {
+    background: $primary;
+}
+
+.primary-color {
+    color: $primary!important;
+}
+
+.primary-border {
+    border-color: $primary!important;
+}
+
+.secondary-color {
+    color: $secondary;
+}
