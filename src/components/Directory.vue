@@ -9,7 +9,7 @@
                         <h3>Nombre veterinaria</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores, minus animi numquam ipsam aut doloremque magni obcaecati nesciunt nihil.</p>
                         <div class="icon-row">
-                            <span class="primary-color">Ver Más</span>
+                            <router-link to="/detalle" class="view-more primary-color">Ver Más</router-link>
                             <contact></contact>                            
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                         <h3>Nombre veterinaria</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores, minus animi numquam ipsam aut doloremque magni obcaecati nesciunt nihil.</p>
                         <div class="icon-row">
-                            <span class="primary-color">Ver Más</span>
+                            <router-link to="/detalle" class="view-more primary-color">Ver Más</router-link>
                             <contact></contact>
                         </div>
                     </div>
@@ -65,8 +65,11 @@ export default {
         margin-top: 1.5rem;
     }
 
-    .icon-row span {
-        cursor: pointer;
+    .icon-row .view-more {
         font-weight: 700;
+    }
+
+    .icon-row .view-more {
+        text-decoration: none;
     }
 </style>
