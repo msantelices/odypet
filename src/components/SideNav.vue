@@ -8,10 +8,10 @@
                 <router-link to="/directorio">Directorio</router-link>
             </li>
             <li>
-                <router-link to="/">Mapa</router-link>
+                <router-link to="/mapa">Mapa</router-link>
             </li>
             <li>
-                <router-link to="/">Contacto</router-link>
+                <router-link to="/contacto">Contacto</router-link>
             </li>
         </ul>
     </nav>

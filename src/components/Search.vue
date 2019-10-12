@@ -28,7 +28,7 @@
 
 <style scoped>
     .search-container {
-        padding: 6rem 1rem 3rem 1rem;
+        padding: 6rem 1rem 1.5rem 1rem;
     }
 
     p {

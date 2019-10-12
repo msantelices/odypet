@@ -35,7 +35,7 @@
 <script>
 import contact from './ContactIcons.vue'
 export default {
-    components: { contact }
+    components: { contact },
 }
 </script>
 

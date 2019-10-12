@@ -8,11 +8,11 @@
             <i class="fas fa-store-alt"></i>
         </router-link>
 
-        <router-link to="/">
+        <router-link to="/mapa">
             <i class="fas fa-map-marker-alt"></i>
         </router-link>
 
-        <router-link to="/">
+        <router-link to="/contacto">
             <i class="fas fa-user"></i>
         </router-link>
     </footer>

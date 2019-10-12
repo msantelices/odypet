@@ -12,6 +12,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit consequatur, molestias alias similique quaerat aliquam, sint, harum maxime temporibus velit corporis dolorum laudantium? Consequuntur error porro aut maiores inventore voluptas nostrum rem eos ipsum repellat fugiat, dignissimos nesciunt ipsa velit nobis officia possimus suscipit voluptatem vel! Vitae ducimus ratione ad.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt molestias asperiores temporibus esse sint soluta aliquam fugit dignissimos maiores, officiis facilis, tenetur reiciendis iusto, est ipsam non voluptas qui quisquam a eligendi eaque voluptatum? Laboriosam fuga recusandae officia quia atque ipsum eius explicabo officiis est vitae quisquam reiciendis enim totam doloribus aliquam provident repellendus tempore quod, ullam similique eos. Asperiores sint officiis quisquam reprehenderit culpa, expedita distinctio itaque ipsum non. Nulla reiciendis veniam unde eum odio facilis delectus inventore nam sapiente ut ipsum nesciunt ullam non, quibusdam sed doloremque. Laudantium atque distinctio soluta placeat! Illum sed placeat neque est nam.</p>
             </div>
+            <div class="go-back">
+                <span @click="goBack" class="primary-color"><i class="fas fa-long-arrow-alt-left"></i> Volver</span>
+            </div> 
             <div class="contact-row">
                 <p>Contactanos!</p>
                 <contact></contact>
@@ -24,7 +27,12 @@
 import parallax from 'vue-parallaxy'
 import contact from './ContactIcons.vue'
 export default {
-    components: { parallax, contact }
+    components: { parallax, contact },
+    methods: {
+        goBack() {
+            window.history.back()
+        }
+    }
 }
 </script>
 
@@ -69,18 +77,27 @@ export default {
         margin-bottom: 1.5rem;
     }
 
+    .go-back {
+        margin-top: 2rem;
+    }
+
+    .go-back span {
+        font-weight: 500;
+        cursor: pointer;
+    }
+
     .contact-row {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
     
     .contact-row p {
         text-transform: uppercase;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         margin-bottom: 1.5rem;
-        font-weight: 500;
+        font-weight: 700;
     }
 </style>
